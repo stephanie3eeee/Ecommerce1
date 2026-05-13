@@ -1,0 +1,122 @@
+<html>
+<head>
+<title> Ecommerce </title>
+<link rel="stylesheet" style="text/css" href ="proj.css">
+</head>
+<body>
+<header><img src="donut.png" alt="Blue" class="gambar1"></header>
+<div class="navbar">
+  <a href="index.html">Home</a>
+  <div class="subnav">
+    <button class="subnavbtn">Burger <i class="fa fa-caret-down"></i></button>
+	<div class="subnav-content">
+	  <a href="main.html">Normal Burger</a>
+	  <a href="main1.html">The Big Mac</a>
+</div>
+</div>
+	  
+<div class="subnav">
+    <button class="subnavbtn">Pizza <i class="fa fa-caret-down"></i></button>
+	<div class="subnav-content">
+	  <a href="1">2-4 potongan</a>
+	  <a href="2">8-12 potongan</a>
+</div>
+</div>
+<div class="subnav">
+    <button class="subnavbtn">Minuman <i class="fa fa-caret-down"></i></button>
+	<div class="subnav-content">
+	  <a href="3">Jus</a>
+	  <a href="4">Soda</a>
+</div>
+</div>
+<div class="subnav">
+    <button class="subnavbtn">Dessert <i class="fa fa-caret-down"></i></button>
+	<div class="subnav-content">
+	  <a href="5">Ice cream</a>
+	  <a href="6">Kue</a>
+</div>
+</div>
+  <footer>© 2026</footer>
+</div>
+<br>
+<span1>🛒</span1> <span id="cart">0</span><br>
+<br><c>~ Normal Burger ~</c>
+<div class="container">
+<div>
+<br>
+<div class="card">
+<img src="n1.jpg" class="gambar">
+<h3>Classic Beef Burger</h3>
+<p>Burger daging sapi juicy dengan sayuran segar dan saus spesial 🍔</p>
+<p>Rp 28.000</p>
+<button onclick="beli('Classic Beef Burger')">Beli</button>
+
+</div>
+
+</div>
+<div>
+<br>
+<div class="card">
+<img src="n2.jpg" class="gambar">
+<h3>Cheese Burger</h3>
+<p>Burger dengan keju leleh creamy yang membuat rasa semakin nikmat 🧀🍔</p>
+<p> Rp 32.000</p>
+<button onclick="beli('Cheese Burger')">Beli</button>
+
+</div>
+</div>
+<div>
+<br>
+<div class="card">
+<img src="n3.jpg" class="gambar">
+<h3>Chicken Crispy Burger</h3>
+<p>Ayam crispy renyah dipadukan dengan saus mayo lezat 🍗✨</p>
+<p>Rp 30.000</p>
+<button onclick="beli('Chicken Crispy Burger')">Beli</button>
+
+</div>
+</div>
+<div>
+<div class="card">
+<img src="n4.jfif" class="gambar">
+<h3>BBQ Smoke Burger</h3>
+<p> Burger dengan saus BBQ smoky dan daging premium yang menggugah selera 🔥🍔</p>
+<p> Rp 35.000</p>
+<button onclick="beli('BBQ Smoke Burger')">Beli</button>
+
+</div>
+</div>
+<div>
+
+<div class="card">
+<img src="n5.jpg" class="gambar">
+<h3>Double Patty Burger</h3>
+<p>Dua lapis daging sapi dengan keju dan saus spesial yang super puasss <br>😋✨</p>
+<p> Rp 42.000</p>
+<button onclick="beli('Double Patty Burger')">Beli</button>
+
+</div>
+</div>
+<div>
+<div class="card">
+<img src="n6.jpeg" class="gambar">
+<h3>Spicy Burger</h3>
+<p> Burger pedas dengan saus sambal spesial untuk pecinta makanan spicy 🌶️🍔</p>
+<p> Rp 33.000</p>
+<button onclick="beli('Spicy Burger')">Beli</button>
+
+</div>
+</div>
+</div>
+<script src="proj.js"></script>
+
+<script>
+
+let nama = localStorage.getItem("nama");
+if(!nama){
+    window.location.href = "daftar.html";
+}
+document.getElementById("user").innerText = nama;
+</script>
+</body>
+</html>

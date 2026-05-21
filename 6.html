@@ -1,0 +1,122 @@
+<html>
+<head>
+<title> Ecommerce </title>
+<link rel="stylesheet" style="text/css" href ="proj.css">
+</head>
+<body background="bg2.png">
+<header><img src="donut.png" alt="Blue" class="gambar1"></header>
+<div class="navbar">
+  <a href="index.html">Home</a>
+  <div class="subnav">
+    <button class="subnavbtn">Burger <i class="fa fa-caret-down"></i></button>
+	<div class="subnav-content">
+	  <a href="main.html">Normal Burger</a>
+	  <a href="main1.html">The Big Mac</a>
+</div>
+</div>
+	  
+<div class="subnav">
+    <button class="subnavbtn">Pizza <i class="fa fa-caret-down"></i></button>
+	<div class="subnav-content">
+	  <a href="1.html">2-4 potongan</a>
+	  <a href="2.html">8-12 potongan</a>
+</div>
+</div>
+<div class="subnav">
+    <button class="subnavbtn">Minuman <i class="fa fa-caret-down"></i></button>
+	<div class="subnav-content">
+	  <a href="3.html">Jus</a>
+	  <a href="4.html">Soda</a>
+</div>
+</div>
+<div class="subnav">
+    <button class="subnavbtn">Dessert <i class="fa fa-caret-down"></i></button>
+	<div class="subnav-content">
+	  <a href="5.html">Ice cream</a>
+	  <a href="6.html">Kue</a>
+</div>
+</div>
+  <footer>© 2026</footer>
+</div>
+<br>
+<div class="yay"><span1>🛒</span1> <span id="cart">0</span><br></div>
+<br><c>~ Kue ~</c>
+<div class="container">
+<div>
+<br>
+<div class="card">
+<img src="s1.jpg" class="gambar">
+<h3>Chocolate Cake</h3>
+<p>Kue coklat lembut dengan lapisan cream coklat yang manis dan lezat 🍫🍰</p>
+<p>Rp 28.000</p>
+<button onclick="beli('Chocolate Cake')">Beli</button>
+
+</div>
+
+</div>
+<div>
+<br>
+<div class="card">
+<img src="s2.jfif" class="gambar">
+<h3>Strawberry Shortcake</h3>
+<p> Kue vanilla dengan topping strawberry segar dan cream lembut 🍓✨</p>
+<p>Rp 30.000</p>
+<button onclick="beli('Strawberry Shortcake')">Beli</button>
+
+</div>
+</div>
+<div>
+<br>
+<div class="card">
+<img src="s3.jpg" class="gambar">
+<h3>Cheesecake Classic</h3>
+<p> Cheesecake creamy dengan rasa keju yang lembut dan premium 🧀🍰</p>
+<p>Rp 32.000</p>
+<button onclick="beli('Cheesecake Classic')">Beli</button>
+
+</div>
+</div>
+<div>
+<div class="card">
+<img src="s4.jpg" class="gambar">
+<h3>Red Velvet Cake</h3>
+<p> Kue red velvet lembut dengan cream cheese yang manis dan elegan ❤️🍰</p>
+<p>Rp 35.000</p>
+<button onclick="beli('Red Velvet Cake')">Beli</button>
+
+</div>
+</div>
+<div>
+
+<div class="card">
+<img src="s5.jfif" class="gambar">
+<h3>Tiramisu Cake</h3>
+<p>Dessert cake dengan aroma kopi khas dan tekstur lembut yang nikmat ☕✨</p>
+<p> Rp 36.000</p>
+<button onclick="beli('Tiramisu Cake')">Beli</button>
+
+</div>
+</div>
+<div>
+<div class="card">
+<img src="s6.jpg" class="gambar">
+<h3>Rainbow Cake</h3>
+<p> Kue warna-warni dengan lapisan lembut dan rasa manis yang menyenangkan 🌈🍰</p>
+<p> Rp 34.000</p>
+<button onclick="beli('Rainbow Cake')">Beli</button>
+
+</div>
+</div>
+</div>
+<script src="proj.js"></script>
+
+<script>
+
+let nama = localStorage.getItem("nama");
+if(!nama){
+    window.location.href = "daftar.html";
+}
+document.getElementById("user").innerText = nama;
+</script>
+</body>
+</html>
